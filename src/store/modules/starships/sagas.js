@@ -1,13 +1,13 @@
-import { call, put, all, takeLatest } from "redux-saga/effects";
+import { call, put, all, takeLatest } from 'redux-saga/effects';
 
-import { api } from "../../../services/api";
+import { api } from '../../../services/api';
 
-import { resourceSpend } from "../../../utils";
-import { loadStarshipsSuccess } from "./actions";
+import { resourceSpend } from '../../../utils';
+import { loadStarshipsSuccess } from './actions';
 
 function* loadStarships() {
     try {
-        const response = yield call(api.get, "/starships");
+        const response = yield call(api.get, '/starships');
 
         const { results } = response.data;
 
@@ -21,7 +21,9 @@ function* loadStarships() {
         });
 
         yield put(loadStarshipsSuccess(starships));
-    } catch (error) {}
+    } catch (error) {
+        console.error(error);
+    }
 }
 
-export default all([takeLatest("@starships/LOAD_REQUEST", loadStarships)]);
+export default all([takeLatest('@starships/LOAD_REQUEST', loadStarships)]);
