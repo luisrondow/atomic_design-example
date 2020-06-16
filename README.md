@@ -1,8 +1,6 @@
 # Nata.House Tech test
 
-![Home Page](https://i.imgur.com/gQoPC55.jpg)
-> Wireframe feito para a aplicação utilizando a paleta de cores Sith Lord Darth Vader Color Palette
-> Wireframe made for the application using the Sith Lord Darth Vader Color Palette
+![Home Page](https://i.imgur.com/mJsWyOC.jpg)
 
 ## Como executar / How to run
 
