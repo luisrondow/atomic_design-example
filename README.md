@@ -1,4 +1,4 @@
-# Nata.House Tech test
+# An Example of React Atomic Design
 
 ![Home Page](https://i.imgur.com/mJsWyOC.jpg)
 
